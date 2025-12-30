@@ -50,10 +50,14 @@
     line-height: 24px;
     border: transparent;
     font-size: 16px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 25px;
     display: inline-block;
     cursor: pointer;
+}
+
+.borderless-btn:hover {
+    color: var(--black);
 }
 
 .primary-btn{
@@ -67,6 +71,11 @@
     cursor: pointer;
 }
 
+.primary-btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
 .secondary-btn{
   display: flex;
   align-items: center;   
@@ -78,16 +87,14 @@
   font-size: 16px;
   line-height: 24px;
   gap: 8px;
-  display: inline-block;
   cursor: pointer;
 }
+
 
 .secondary-btn img{
     height: 20px;
     width: 20px;
-
 }
-
 
 
 /* Start of top-content sectcion */
