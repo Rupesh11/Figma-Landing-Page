@@ -8,12 +8,15 @@ body{
 
 .yellow-container{
   width: 100%;
+  height: auto;
   background-color: var(--yellow-container);
 }
 
 .silver-container{
   width: 100%;
+  height: auto;
   background-color: var(--silver-container);
+
 }
 .borderless-btn, .primary-btn{
   font-family: "Poppins", sans-serif;
@@ -32,10 +35,13 @@ ul{
     text-align: center;
 }
 
-h2 , h3 , h4 , h6{
+h2 , h3 , h4 , h5, h6{
   font-family: "Poppins", sans-serif; 
   font-weight: bold;
   color: var(--black);
+  line-height: 130%;
+  letter-spacing: -2%;
+  margin: 0;
 }
 
 
@@ -43,5 +49,19 @@ p {
    font-family: "Mulish", sans-serif;
    color: var(--black);
    font-style: normal;
+   line-height: 150%;
 }
 
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #009379;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.first-row img, .second-row img, .third-row img{
+  margin: 40px 0;
+  width: 64px; 
+}
