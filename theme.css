@@ -1,7 +1,8 @@
 :root{
-    --primary: #2D2D2D;
+    --black: #2D2D2D;
     --white: #FFFFFF;
     --green: #009379;
-    --black: #3B3B3B;
-    --background: #F8F9FF;
+    --yellow-container: #F8D57E; 
+    --silver-container: #F8F9FF;
+    --light-green: #E5F4F2;
 }
