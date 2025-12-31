@@ -326,7 +326,7 @@
     margin: 0;
     font-size: 38px;
     letter-spacing: -2%;
-    margin-top:120px;
+    margin-top: 120px;
 }
 
 .review-heading p{
@@ -497,9 +497,6 @@
     width: 1280px;
     margin: 0 auto;
 }
-
-
-
 
 .intergations-heading{
     display: flex;
