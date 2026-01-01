@@ -1,42 +1,44 @@
-
 /* MAIN  SPECIFICATION */
-body{
-   margin: 0 ;
-   max-width: 100%;
+body {
+  margin: 0;
+  max-width: 100%;
 }
 
-
-.yellow-container{
+.yellow-container {
   width: 100%;
   height: auto;
   background-color: var(--yellow-container);
 }
 
-.silver-container{
+.silver-container {
   width: 100%;
   height: auto;
   background-color: var(--silver-container);
-
 }
-.borderless-btn, .primary-btn{
+.borderless-btn,
+.primary-btn {
   font-family: "Poppins", sans-serif;
   color: var(--green);
   font-weight: 600;
 }
 
-.secondary-btn{
+.secondary-btn {
   font-family: "Poppins", sans-serif;
   color: var(--white);
   font-weight: 600;
 }
 
-ul{
-    list-style: none;
-    text-align: center;
+ul {
+  list-style: none;
+  text-align: center;
 }
 
-h2 , h3 , h4 , h5, h6{
-  font-family: "Poppins", sans-serif; 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: var(--black);
   line-height: 130%;
@@ -44,12 +46,11 @@ h2 , h3 , h4 , h5, h6{
   margin: 0;
 }
 
-
 p {
-   font-family: "Mulish", sans-serif;
-   color: var(--black);
-   font-style: normal;
-   line-height: 150%;
+  font-family: "Mulish", sans-serif;
+  color: var(--black);
+  font-style: normal;
+  line-height: 150%;
 }
 
 a {
@@ -61,7 +62,9 @@ a {
   line-height: 20px;
 }
 
-.first-row img, .second-row img, .third-row img{
+.first-row img,
+.second-row img,
+.third-row img {
   margin: 40px 0;
-  width: 64px; 
+  width: 64px;
 }
