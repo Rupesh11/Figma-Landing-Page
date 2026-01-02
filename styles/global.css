@@ -1,28 +1,13 @@
 /* MAIN  SPECIFICATION */
-body {
-  margin: 0;
-  max-width: 100%;
-}
 
-.yellow-container {
-  width: 100%;
-  height: auto;
-  background-color: var(--yellow-container);
-}
-
-.silver-container {
-  width: 100%;
-  height: auto;
-  background-color: var(--silver-container);
-}
 .borderless-btn,
-.primary-btn {
+.secondary-btn {
   font-family: "Poppins", sans-serif;
-  color: var(--green);
+  color: var(--green-700);
   font-weight: 600;
 }
 
-.secondary-btn {
+.primary-btn {
   font-family: "Poppins", sans-serif;
   color: var(--white);
   font-weight: 600;
@@ -51,20 +36,16 @@ p {
   color: var(--black);
   font-style: normal;
   line-height: 150%;
+  font-size: 16px;
 }
 
 a {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 14px;
-  color: #009379;
+  color: var(--green-700);
   text-decoration: none;
   line-height: 20px;
 }
 
-.first-row img,
-.second-row img,
-.third-row img {
-  margin: 40px 0;
-  width: 64px;
-}
+/* Button */

@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="yellow-container">
@@ -21,14 +24,15 @@
             <button class="borderless-btn">Contact</button>
           </li>
           <li>
-            <button class="primary-btn">How it works</button>
+            <button class="secondary-btn"><span>How it works</span></button>
           </li>
           <li>
-            <button class="secondary-btn">
+            <button class="primary-btn">
               <img
+                class="rocket-launch"
                 src="assests/Icons/rocket-launch.svg"
-                alt="rocket launch icon"
-              />Get Started
+                alt="rocket  icon"
+              /><span>Get Started</span>
             </button>
           </li>
         </ul>
@@ -48,14 +52,17 @@
               </p>
               <ul class="content-button">
                 <li>
-                  <button class="primary-btn">How it works</button>
+                  <button class="secondary-btn">
+                    <span>How it works</span>
+                  </button>
                 </li>
                 <li>
-                  <button class="secondary-btn">
+                  <button class="primary-btn">
                     <img
+                      class="rocket-launch"
                       src="assests/Icons/rocket-launch.svg"
                       alt="rocket launch icon"
-                    />Get Started
+                    /><span>Get Started</span>
                   </button>
                 </li>
               </ul>
@@ -350,8 +357,8 @@
               </div>
             </div>
 
-            <button class="secondary-btn" id="special-button">
-              View All Integrations
+            <button class="primary-btn" id="special-button">
+              <span>View All Integrations</span>
             </button>
           </div>
         </section>
@@ -366,11 +373,11 @@
               </p>
             </div>
             <div class="ui-kit-middle">
-              <button class="secondary-btn">
+              <button class="primary-btn">
                 <img
                   src="assests/Icons/rocket-launch.svg"
                   alt="rocket launch icon"
-                />Get Started
+                /><span>Get Started</span>
               </button>
             </div>
             <div class="bottom-laptop-picture">
