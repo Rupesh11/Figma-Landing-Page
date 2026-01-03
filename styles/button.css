@@ -4,7 +4,7 @@
   border-radius: 20px;
   background-color: var(--yellow-200);
   line-height: 24px;
-  border: transparent;
+  border: none;
   font-size: 16px;
   padding-top: 20px;
   padding-right: 25px;
@@ -24,8 +24,6 @@
   border: none;
   padding: 16px 50px;
   background-color: var(--green-700);
-  font-size: 16px;
-  line-height: 24px;
   gap: 8px;
   cursor: pointer;
   transition: all 0.35s;
@@ -110,44 +108,67 @@
 .alternative-primary-btn {
   display: none;
 }
-/* 
-@media (max-width: 480px) {
-  .nav-list {
-    display: inline-block;
-    margin-right: 0%;
-    padding-right: 20px;
-  }
-  .primary-btn:hover {
-    display: none;
-  }
-  .borderless-btn,
-  .primary-btn,
-  .secondary-btn {
+
+@media (max-width: 1024px) {
+  .nav-bar .borderless-btn,
+  .nav-bar .primary-btn,
+  .nav-bar .secondary-btn {
     display: none;
     margin: 0%;
     padding: 0%;
   }
-  .alternative-secondary-btn {
-    display: flex;
-    flex-direction: row;
+
+  .nav-bar .alternative-primary-btn {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border-radius: 20px;
-    border: transparent;
-    padding: 16px 55px;
+    border: none;
+    padding: 16px 50px;
     background-color: var(--green-700);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
     gap: 8px;
     cursor: pointer;
+    transition: all 0.35s;
+    position: relative;
+    z-index: 0;
   }
 
-  .alternative-secondary-btn img {
+  .nav-bar .alternative-primary-btn * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .arrow-icon {
     height: 20px;
     max-width: 20px;
+    width: 100%;
+    transition: filter 0.35s;
   }
-} */
+
+  .nav-bar .alternative-primary-btn::after {
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: 0;
+    width: 0;
+    height: 40%;
+    background-color: var(--Aquasqueeze-100);
+    transition: all 0.35s;
+    z-index: 1;
+  }
+
+  .nav-bar .alternative-primary-btn:hover {
+    color: var(--red-500);
+  }
+  .nav-bar .alternative-primary-btn:hover::after {
+    width: 100%;
+  }
+
+  .nav-bar .alternative-primary-btn:hover .arrow-icon {
+    filter: invert(28%) sepia(71%) saturate(6953%) hue-rotate(351deg)
+      brightness(85%) contrast(122%);
+  }
+}
 
 /* Features buttons */
 
@@ -168,4 +189,9 @@
 
 .features-btn:hover {
   border: 1px solid var(--green-700);
+}
+
+@media (max-width: 1024px) {
+  .features-btn {
+  }
 }
