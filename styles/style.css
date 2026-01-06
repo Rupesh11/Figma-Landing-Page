@@ -47,7 +47,7 @@
   height: 450px;
 }
 
-/* Media queries for top content */
+/* Media queries for top content tablet version */
 
 @media (max-width: 1024px) {
   .top-content {
@@ -75,6 +75,48 @@
   .content-picture {
     height: 450px;
     margin: 0 auto;
+  }
+}
+
+/* Media queries for top content mobile version */
+
+@media (max-width: 480px) {
+  .top-content {
+    padding: 60px 30px 0 30px;
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  .content-desc {
+    gap: 20px;
+  }
+  .content-desc h2 {
+    font-size: 38px;
+    padding-left: 10px;
+  }
+
+  .content-desc p {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  .content-desc span a {
+    font-size: 16px;
+  }
+
+  .content-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  .content-picture {
+    height: auto;
+    margin: 0 auto;
+  }
+  .content-picture img {
+    width: 315px;
   }
 }
 /* Start of feature section
@@ -135,7 +177,12 @@
   line-height: 150%;
 }
 
-/* Media queries for features content */
+/* Media queries for features content phone version */
+
+.features {
+  padding: 60px 30px;
+}
+/* Media queries for features content tablet version */
 
 @media (max-width: 1024px) {
   .features {

@@ -170,6 +170,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .nav-bar .alternative-primary-btn {
+    padding: 16px 50px;
+  }
+}
+
 /* Features buttons */
 
 .features-btn {

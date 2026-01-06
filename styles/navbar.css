@@ -45,7 +45,7 @@
 
 @media (max-width: 1024px) {
   .nav-bar {
-    gap: 467px;
+    justify-content: space-between;
   }
   .logo-wrapper {
     margin-left: 30px;
@@ -56,5 +56,11 @@
   }
   .nav-list {
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list{
+    margin-right: 20px;
   }
 }
