@@ -177,11 +177,6 @@
   line-height: 150%;
 }
 
-/* Media queries for features content phone version */
-
-.features {
-  padding: 60px 30px;
-}
 /* Media queries for features content tablet version */
 
 @media (max-width: 1024px) {
@@ -204,6 +199,46 @@
   .features p {
     max-width: 680px;
     padding-right: 15px;
+  }
+
+  .features-group-btn {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Media queries for features content phone version */
+
+@media (max-width: 480px) {
+  .features {
+    padding: 60px 30px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    gap: 60px;
+  }
+
+  .features-desc {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .features p {
+    text-indent: 15px;
+    padding-left: 35px;
+    margin: 0 auto;
+  }
+
+  .full-mobile-picture {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .full-mobile-picture img {
+    width: 100%;
+  }
+
+  .features-btn span {
+    font-size: 21px;
   }
 }
 
@@ -276,7 +311,7 @@
   font-size: 16px;
 }
 
-/* Media queries for selected/latest  work section */
+/* Media queries for selected/latest work section - tablet version*/
 
 @media (max-width: 1024px) {
   .latest-work {
@@ -331,6 +366,31 @@
   }
 }
 
+/* Media queries for latest content phone version */
+
+@media (max-width: 480px) {
+  .latest-work {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+
+  .project-lists {
+    justify-content: center;
+    width: 100%;
+  }
+  .project-group {
+    max-width: 100%;
+  }
+
+  .project-details h4 {
+    font-size: 28px;
+    font-weight: 600px;
+  }
+
+  .project-details span {
+    font-size: 16px;
+  }
+}
 /* Customer reviews section */
 
 .customer-reviews {
@@ -399,6 +459,10 @@
   font-weight: 600;
 }
 
+.customer-details-title span {
+  font-size: 14px;
+}
+
 .customer-profile {
   width: 120px;
   height: 120px;
@@ -430,7 +494,7 @@
   display: block;
 }
 
-/* Media queries for top content */
+/* Media queries for customer content tablet version */
 
 @media (max-width: 1024px) {
   .customer-reviews {
@@ -440,14 +504,14 @@
 
   .reviews-card {
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .review-card-details {
     flex-direction: row;
     align-items: center;
-    text-align: center;
     padding: 40px;
     gap: 30px;
     max-width: 680px;
@@ -455,6 +519,45 @@
 
   .review-heading {
     max-width: 680px;
+  }
+}
+
+/* Media queries for customer content phone version */
+
+@media (max-width: 480px) {
+  .customer-reviews {
+    padding: 60px 30px;
+    justify-content: center;
+  }
+
+  .review-card {
+    gap: 60px;
+    height: auto;
+  }
+
+  .review-card-details {
+    flex-direction: column;
+    padding: 40px 30px;
+    height: auto;
+  }
+
+  .customer-rating {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .customer-details {
+    width: 100%;
+    align-items: center;
+  }
+
+  .rating-star {
+    display: block;
+    padding-left: 25%;
+  }
+
+  .text-reviews {
+    padding-left: 17px;
   }
 }
 
@@ -618,31 +721,29 @@
 }
 
 .companies-icon {
-  max-width: 1170px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .first-row {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .second-row {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 960px;
-  margin: 0 auto;
+  justify-content: space-evenly;
 }
 
 .third-row {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 720px;
-  margin: 0 auto;
+  justify-content: space-evenly;
 }
 
 #special-button {
@@ -653,7 +754,7 @@
   margin-right: auto;
 }
 
-/* Media queries  for intergrations section*/
+/* Media queries  for intergrations section for tablet*/
 
 @media (max-width: 1024px) {
   .intergrations-container {
@@ -665,34 +766,38 @@
     font-size: 38px;
   }
 
-  .companies-icon {
-    max-width: 680px;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+  .first-row img,
+  .second-row img,
+  .third-row img {
+    padding: 32px 0;
+    max-width: 50px;
   }
+}
 
-  .first-row {
-    gap: 76px;
-  }
+/* media queries for intergation section for mobile  */
 
-  .second-row {
-    gap: 67.5px;
-    max-width: 520px;
-    justify-content: center;
-  }
-
-  .third-row {
-    gap: 66.67px;
-    max-width: 400px;
-    justify-content: center;
+@media (max-width: 480px) {
+  .intergrations-container {
+    padding: 60px 30px;
   }
 
   .first-row img,
   .second-row img,
   .third-row img {
     padding: 32px 0;
+    max-width: 40px;
+  }
+
+  .first-row {
+    justify-content: space-between;
+  }
+
+  .second-row {
+    padding: 0 30px;
+  }
+
+  .third-row {
+    padding: 0 60px;
   }
 }
 /* Start of Landing Page UI KIT today  */
