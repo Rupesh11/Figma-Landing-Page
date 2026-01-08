@@ -13,7 +13,7 @@
 }
 
 .borderless-btn:hover {
-  color: var(--red-500);
+  color: var(--black);
 }
 
 .primary-btn {
@@ -46,25 +46,26 @@
 .primary-btn::after {
   position: absolute;
   content: "";
-  top: 30%;
+  top: 0;
   left: 0;
   width: 0;
-  height: 40%;
+  height: 100%;
   background-color: var(--Aquasqueeze-100);
+  border-radius: 15px;
   transition: all 0.35s;
   z-index: 1;
 }
 
 .primary-btn:hover {
-  color: var(--red-500);
+  color: var(--green-700);
 }
 .primary-btn:hover::after {
   width: 100%;
 }
 
 .primary-btn:hover .rocket-launch {
-  filter: invert(28%) sepia(71%) saturate(6953%) hue-rotate(351deg)
-    brightness(85%) contrast(122%);
+  filter: invert(43%) sepia(86%) saturate(487%) hue-rotate(125deg)
+    brightness(92%) contrast(95%);
 }
 
 .secondary-btn {
@@ -89,10 +90,11 @@
 .secondary-btn::after {
   position: absolute;
   content: "";
-  top: 30;
+  top: 0;
   left: 0;
   width: 0;
-  height: 40%;
+  height: 100%;
+  border-radius: 15px;
   background-color: var(--green-700);
   transition: all 0.35s;
   z-index: 1;
@@ -151,7 +153,7 @@
     top: 30%;
     left: 0;
     width: 0;
-    height: 40%;
+    height: 100%;
     background-color: var(--Aquasqueeze-100);
     transition: all 0.35s;
     z-index: 1;
